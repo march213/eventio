@@ -3,7 +3,6 @@ import { useCurrentUser } from "src/users/hooks/useCurrentUser";
 import logout from "src/auth/mutations/logout";
 import { useMutation } from "@blitzjs/rpc";
 import { Routes } from "@blitzjs/next";
-import styles from "src/styles/Home.module.css";
 
 export const UserInfo = () => {
   const currentUser = useCurrentUser();
@@ -13,7 +12,6 @@ export const UserInfo = () => {
     return (
       <>
         <button
-          className={styles.button}
           onClick={async () => {
             await logoutMutation();
           }}
@@ -30,10 +28,10 @@ export const UserInfo = () => {
   } else {
     return (
       <>
-        <Link href={Routes.SignupPage()} className={styles.button}>
+        <Link href={Routes.SignupPage()}>
           <strong>Sign Up</strong>
         </Link>
-        <Link href={Routes.LoginPage()} className={styles.loginButton}>
+        <Link href={Routes.LoginPage()}>
           <strong>Login</strong>
         </Link>
       </>

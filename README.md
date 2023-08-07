@@ -89,7 +89,6 @@ eventio
 │   ├── core/
 │   │   ├── components/
 │   │   │   ├── Form.tsx
-│   │   │   └── LabeledTextField.tsx
 │   │   └── layouts/
 │   │       └── Layout.tsx
 │   ├── pages/

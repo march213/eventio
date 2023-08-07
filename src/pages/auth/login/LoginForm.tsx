@@ -1,7 +1,6 @@
 import { AuthenticationError, PromiseReturnType } from "blitz";
 import Link from "next/link";
 import login from "src/features/auth/mutations/login";
-import { Login } from "src/features/auth/schemas";
 import { useMutation } from "@blitzjs/rpc";
 import { Routes } from "@blitzjs/next";
 import { useForm } from "@mantine/form";
